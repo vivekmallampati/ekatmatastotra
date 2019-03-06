@@ -15,10 +15,12 @@
 }
 #on{
   width: 10%;
-  margin-right: 0px;
+  margin-left: 10px;
 }
-#on{
+#off{
   width: 10%;
+  margin-left: 10px;
+
 }
 
 #lyric_space{
@@ -32,4 +34,5 @@
 }
 #meaning{
   width: 50%;
+
 }

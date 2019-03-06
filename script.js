@@ -1,4 +1,4 @@
-
+let isOn = false;
 function getHighlighted(){
   let ourSelection = window.getSelection();
   let start = window.getSelection().baseOffset;
@@ -11,12 +11,29 @@ function getHighlighted(){
   return selection;
 
 }
+
+function highlightOn(){
+  var div = document.getElementById('on');
+  div.style.backgroundColor = 'green';
+  var div = document.getElementById('off');
+  div.style.backgroundColor = 'red';
+}
+
+function highlightOff(){
+  var div = document.getElementById('off');
+  div.style.backgroundColor = 'green';
+  var div = document.getElementById('on');
+  div.style.backgroundColor = 'red';
+}
+
 function enableisOn(){
   isOn = true;
+  highlightOn();
 }
 
 function disableisOn(){
   isOn = false;
+  highlightOff();
 }
 
 function search(){
@@ -31,7 +48,7 @@ function search(){
 //   getHighlighted()
 // }
 window.onmouseup = function(){
-  if (isOn = true) {
+  if (isOn === true) {
     search();
   }
 }
