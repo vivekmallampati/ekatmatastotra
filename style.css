@@ -6,13 +6,20 @@
   display: flex;
 }
 #lyrics{
-  width: 30%;
+  width: 40%;
   margin-right: 20px;
 }
 #interactive{
   width: 30%;
+  display: flex;
 }
-
+#on{
+  width: 10%;
+  margin-right: 0px;
+}
+#on{
+  width: 10%;
+}
 
 #lyric_space{
   height: 100%;
