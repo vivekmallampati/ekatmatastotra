@@ -1,4 +1,6 @@
 let isOn = false;
+highlightOff();
+makeSanskritNotVisible()
 function getHighlighted(){
   let ourSelection = window.getSelection();
   let start = window.getSelection().baseOffset;
@@ -10,6 +12,32 @@ function getHighlighted(){
   let selection = baseText.substring(start,end);
   return selection;
 
+}
+function makeSanskritVisible() {
+  var sanskrith = document.getElementById("sanskrith");
+  var english = document.getElementById("english");
+  sanskrith.style.width = "100%";
+  english.style.width = "0%";
+  sanskrith.style.visibility = 'visible';
+  english.style.visibility = 'hidden';
+  var div = document.getElementById('sanskrith_text');
+  div.style.backgroundColor = 'green';
+  var div = document.getElementById('english_text');
+  div.style.backgroundColor = 'red';
+}
+
+function makeSanskritNotVisible() {
+  var sanskrith = document.getElementById("sanskrith");
+  var english = document.getElementById("english");
+  sanskrith.style.width = "0%";
+  english.style.width = "100%";
+
+  sanskrith.style.visibility = 'hidden';
+  english.style.visibility = 'visible';
+  var div = document.getElementById('sanskrith_text');
+  div.style.backgroundColor = 'red';
+  var div = document.getElementById('english_text');
+  div.style.backgroundColor = 'green';
 }
 
 function highlightOn(){

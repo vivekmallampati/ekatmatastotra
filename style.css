@@ -8,6 +8,7 @@
 #lyrics{
   width: 40%;
   margin-right: 20px;
+  display: flex;
 }
 #interactive{
   width: 30%;
@@ -20,7 +21,14 @@
 #off{
   width: 10%;
   margin-left: 10px;
-
+}
+#sanskrith_text{
+  width: 20%;
+  margin-left: 5px;
+}
+#english_text{
+  width: 20%;
+  margin-left: 5px;
 }
 
 #lyric_space{
@@ -30,6 +38,15 @@
 }
 #translation{
   width: 40%;
+  margin-right: 20px;
+  display: flex;
+}
+#sanskrith{
+  width: 100%;
+  margin-right: 20px;
+}
+#english{
+  width: 100%;
   margin-right: 20px;
 }
 #meaning{
