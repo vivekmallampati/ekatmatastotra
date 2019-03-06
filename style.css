@@ -1,0 +1,28 @@
+/*Style.css*/
+
+#link{
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+#lyrics{
+  width: 30%;
+  margin-right: 20px;
+}
+#interactive{
+  width: 30%;
+}
+
+
+#lyric_space{
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+#translation{
+  width: 40%;
+  margin-right: 20px;
+}
+#meaning{
+  width: 50%;
+}
