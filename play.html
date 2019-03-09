@@ -7,7 +7,7 @@
     <title>Geet</title>
   </head>
   <body>
-    <audio controls>
+    <audio id="audioFile" controls>
       <source src="audio/Ekaatmata_Stotra.mp3" type="audio/mpeg" align="center">
     Your browser does not support the audio element. Use a modern browser.
     </audio>
@@ -38,164 +38,185 @@
       <div id ="translation" align= "center">
         <span id = "english" align = "center">
         <h4><b><u> Lyrics </u></b></h4>
-        <p>AUM namaH sachchidaana.ndaruupaaya paramaatmane<br />
+        <p id="E1">AUM namaH sachchidaana.ndaruupaaya paramaatmane<br />
         jyotirmayasvaruupaaya vishvamaa.ngalyamuurtaye  ||1||</p>
-        <p>prakR^itiH pa.nchabhuutaani grahalokasvaraastathaa<br />
-        dishaH kaalashcha sarveshhaa.n sadaa kurva.ntu ma.ngalam.h  2</p>
-        <p>ratnaakaraadhautapadaa.n himaalayakiriiTiniim.h<br />
-        brahmaraajarshhiratnaaDhyaam vande bhaaratamaataram.h  3</p>
-        <p>mahe.ndro malayaH sahyo devataatmaa himaalayaH<br />
-        dhyeyo raivatako vindhyo girishchaaraavalistathaa  4</p>
-        <p>ga.ngaa sarasvatii si.ndhu brahmaputraashcha ga.ndakii<br />
-        kaaverii yamunaa revaa kR^ishhNaa godaa mahaanadii  5</p>
-        <p>ayodhyaa mathuraa maayaa kaashii kaa.nchii ava.ntikaa<br />
-        vaishaalii dwaarakaa dhyeyaa purii takshashilaa gayaa  6 </p>
-        <p>prayaagaH paaTaliiputra.n vijayaanagaraM mahat.h<br />
-        i.ndraprastha.n somanaathastathaamR^itasaraH priyam.h  7</p>
-        <p>chaturvedaaH puraaNaani sarvopaniShadastathaa<br />
-        raamaayaNaM bhaarata.n cha giitaa ShaDdarshanaani cha  8</p>
-        <p>jainaagamaastripiTakaH gurugranthaH sataa.n giraH<br />
-        eshha GYaananidhiH shreShThaH shraddheyo hR^idi sarvadaa  9 </p>
-        <p>arundhatyanasuuya cha saavitrii jaanakii satii<br />
-        draupadii kannagee gaargii miiraa durgaavatii tathaa  10 </p>
-        <p>laxmii ahalyaa channammaa rudramaambaa suvikramaa<br />
-        niveditaa saaradaa cha praNamya maatR^i devataaH  11</p>
-        <p>shrii raamo bharataH kR^ishhNo bhiishhmo dharmastathaarjunaH<br />
-        maarka.nDeyo harishchandra prahlaado naarado dhruvaH  12</p>
-        <p>hanumaan.h janako vyaaso vasishhThashcha shuko baliH<br />
-        dadhiichi vishvakarmaaNau pR^ithu vaalmiiki bhaargavaH  13</p>
-        <p>bhagiirathashchaikalavyo manurdhanvantaristathaa<br />
-        shibishcha rantidevashcha  puraaNodgiitakiirtayaH  14 </p>
-        <p>buddha jinendra gorakshaH paaNinishcha pata.njaliH<br />
-        sha.nkaro madhva niMbaarkau shrii raamaanuja vallabhau  15</p>
-        <p>jhuulelaalotha chaitanyaH tiruvalluvarastathaa<br />
-        naayanmaaraalavaaraashcha kaMbashcha basaveshvaraH  16</p>
-        <p>devalo ravidaasashcha kabiiro guru naanakaH<br />
-        narasii tulasiidaaso dashameshho dR^iDhavrataH  17</p>
-        <p>shriimachchhaN^karadevashcha ba.ndhuu saayana maadhavau<br />
-        GYaaneshwarastukaaraama raamadaasaH purandaraH  18 </p>
-        <p>birasaa sahajaanando ramaanandastathaa mahaan.h<br />
-        vitarantu sadaivaite daivii.n ShaDguNasaMpadam.h  19 </p>
-        <p>ravivarmaa bhaatakha.nDe bhaagyachandraH sa bhoopatiH<br />
-        kalaava.ntashcha vikhyaataaH smaraNiiyaa nira.ntaram.h  20 </p>
-        <p>bharatarshhiH kaalidaasaH shriibhojo janakastathaa<br />
-        suuradaasastyaagaraajo rasakhaanashcha satkaviH  21 </p>
-        <p>agastyaH kaMbu kaunDiNyau raajendrashchola va.nshajaH<br />
-        ashokaH pushya mitrashcha khaaravelaH suniitimaan.h  22 </p>
-        <p>chaaNakya chandraguptau cha vikramaH shaalivaahanaH<br />
-        samudraguptaH shriiharshhaH shaile.ndro bapparaavalaH  23</p>
-        <p>laachidbhaaskara varmaa cha yashodharmaa cha huuNajit.h<br />
-        shriikR^ishhNadevaraayashcha lalitaaditya udbalaH  24</p>
-        <p>musunuurinaayakau tau prataapaH shiva bhuupatiH<br />
-        raNajitasi.nha ityete viiraa vikhyaata vikramaaH  25 </p>
-        <p>vaiGYaaanikaashcha kapilaH kaNaadaH shushrutastathaa<br />
-        charako bhaaskaraachaaryo varaahamihira sudhiiH  26 </p>
-        <p>naagaarjuna bharadwaaja aaryabhaTTo vasurbudhaH<br />
-        dhyeyo ve.nkaTa raamashcha viGYaa raamaanujaayaH  27 </p>
-        <p>raamakR^ishhNo dayaana.ndo ravii.ndro raamamohanaH<br />
-        raamatiirtho.aravi.ndashcha vivekaana.nda udyashaH  28 </p>
-        <p>daadaabhaa_ii gopaba.ndhuH TiLako gaa.ndhii raadR^itaaH<br />
-        ramaNo maalaviiyashcha shrii subramaNya bhaaratii  29 </p>
-        <p>subhaashhaH praNavaana.ndaH kraa.ntiviiro vinaayakaH<br />
-        Thakkaro bhiimaraavashcha phule naaraayaNo guruH  30</p>
-        <p>sa.nghashakti praNetaarau keshavo maadhavastathaa<br />
-        smaraNiiya sadaivaite navachaitanyadaayakaaH  31 </p>
-        <p>anuktaa ye bhaktaaH prabhucharaNa sa.nsaktahR^idayaaH<br />
+        <p id="E2">prakR^itiH pa.nchabhuutaani grahalokasvaraastathaa<br />
+        dishaH kaalashcha sarveshhaa.n sadaa kurva.ntu ma.ngalam.h ||2||</p>
+        <p id="E3">ratnaakaraadhautapadaa.n himaalayakiriiTiniim.h<br />
+        brahmaraajarshhiratnaaDhyaam vande bhaaratamaataram.h ||3||</p>
+        <p id="E4">mahe.ndro malayaH sahyo devataatmaa himaalayaH<br />
+        dhyeyo raivatako vindhyo girishchaaraavalistathaa ||4||</p>
+        <p id="E5">ga.ngaa sarasvatii si.ndhu brahmaputraashcha ga.ndakii<br />
+        kaaverii yamunaa revaa kR^ishhNaa godaa mahaanadii ||5||</p>
+        <p id="E6">ayodhyaa mathuraa maayaa kaashii kaa.nchii ava.ntikaa<br />
+        vaishaalii dwaarakaa dhyeyaa purii takshashilaa gayaa  ||6||</p>
+        <p id="E7">prayaagaH paaTaliiputra.n vijayaanagaraM mahat.h<br />
+        i.ndraprastha.n somanaathastathaamR^itasaraH priyam.h ||7||</p>
+        <p id="E8">chaturvedaaH puraaNaani sarvopaniShadastathaa<br />
+        raamaayaNaM bhaarata.n cha giitaa ShaDdarshanaani cha ||8||</p>
+        <p id="E9">jainaagamaastripiTakaH gurugranthaH sataa.n giraH<br />
+        eshha GYaananidhiH shreShThaH shraddheyo hR^idi sarvadaa  ||9||</p>
+        <p id="E10">arundhatyanasuuya cha saavitrii jaanakii satii<br />
+        draupadii kannagee gaargii miiraa durgaavatii tathaa  ||10||</p>
+        <p id="E11">laxmii ahalyaa channammaa rudramaambaa suvikramaa<br />
+        niveditaa saaradaa cha praNamya maatR^i devataaH  ||11||</p>
+        <p id="E12">shrii raamo bharataH kR^ishhNo bhiishhmo dharmastathaarjunaH<br />
+        maarka.nDeyo harishchandra prahlaado naarado dhruvaH  ||12||</p>
+        <p id="E13">hanumaan.h janako vyaaso vasishhThashcha shuko baliH<br />
+        dadhiichi vishvakarmaaNau pR^ithu vaalmiiki bhaargavaH  ||13||</p>
+        <p id="E14">bhagiirathashchaikalavyo manurdhanvantaristathaa<br />
+        shibishcha rantidevashcha  puraaNodgiitakiirtayaH  ||14||</p>
+        <p id="E15">buddha jinendra gorakshaH paaNinishcha pata.njaliH<br />
+        sha.nkaro madhva niMbaarkau shrii raamaanuja vallabhau  ||15||</p>
+        <p id="E16">jhuulelaalotha chaitanyaH tiruvalluvarastathaa<br />
+        naayanmaaraalavaaraashcha kaMbashcha basaveshvaraH  ||16||</p>
+        <p id="E17">devalo ravidaasashcha kabiiro guru naanakaH<br />
+        narasii tulasiidaaso dashameshho dR^iDhavrataH  ||17||</p>
+        <p id="E18">shriimachchhaN^karadevashcha ba.ndhuu saayana maadhavau<br />
+        GYaaneshwarastukaaraama raamadaasaH purandaraH  ||18||</p>
+        <p id="E19">birasaa sahajaanando ramaanandastathaa mahaan.h<br />
+        vitarantu sadaivaite daivii.n ShaDguNasaMpadam.h  ||19||</p>
+        <p id="E20">bharatarshhiH kaalidaasaH shriibhojo janakastathaa<br />
+        suuradaasastyaagaraajo rasakhaanashcha satkaviH  ||20||</p>
+        <p id="E21">ravivarmaa bhaatakha.nDe bhaagyachandraH sa bhoopatiH<br />
+        kalaava.ntashcha vikhyaataaH smaraNiiyaa nira.ntaram.h  ||21||</p>
+        <p id="E22">agastyaH kaMbu kaunDiNyau raajendrashchola va.nshajaH<br />
+        ashokaH pushya mitrashcha khaaravelaH suniitimaan.h  ||22||</p>
+        <p id="E23">chaaNakya chandraguptau cha vikramaH shaalivaahanaH<br />
+        samudraguptaH shriiharshhaH shaile.ndro bapparaavalaH  ||23||</p>
+        <p id="E24">laachidbhaaskara varmaa cha yashodharmaa cha huuNajit.h<br />
+        shriikR^ishhNadevaraayashcha lalitaaditya udbalaH  ||24||</p>
+        <p id="E25">musunuurinaayakau tau prataapaH shiva bhuupatiH<br />
+        raNajitasi.nha ityete viiraa vikhyaata vikramaaH  ||25||</p>
+        <p id="E26">vaiGYaaanikaashcha kapilaH kaNaadaH shushrutastathaa<br />
+        charako bhaaskaraachaaryo varaahamihira sudhiiH  ||26||</p>
+        <p id="E27">naagaarjuna bharadwaaja aaryabhaTTo vasurbudhaH<br />
+        dhyeyo ve.nkaTa raamashcha viGYaa raamaanujaayaH  ||27||</p>
+        <p id="E28">raamakR^ishhNo dayaana.ndo ravii.ndro raamamohanaH<br />
+        raamatiirtho.aravi.ndashcha vivekaana.nda udyashaH  ||28||</p>
+        <p id="E29">daadaabhaa_ii gopaba.ndhuH TiLako gaa.ndhii raadR^itaaH<br />
+        ramaNo maalaviiyashcha shrii subramaNya bhaaratii  ||29||</p>
+        <p id="E30">subhaashhaH praNavaana.ndaH kraa.ntiviiro vinaayakaH<br />
+        Thakkaro bhiimaraavashcha phule naaraayaNo guruH  ||30||</p>
+        <p id="E31">sa.nghashakti praNetaarau keshavo maadhavastathaa<br />
+        smaraNiiya sadaivaite navachaitanyadaayakaaH  ||31||</p>
+        <p id="E32">anuktaa ye bhaktaaH prabhucharaNa sa.nsaktahR^idayaaH<br />
         aviGYaataa viiraa adhisamaramuddhvastari pavaH<br />
         samaajoddhartaaraH suhitakara viGYaana nipuNaaH<br />
-        namastebhyo bhuuyaatsakala sujanebhyaH pratidinam.h  32 </p>
-        <p>idamekaatmataa stotra.n shraddhayaa yaH sadaa paThet.h<br />
-        sa raashhTradharma nishhThaavaanakha.nDaM bhaarata.n smaret.h  33 </p>
+        namastebhyo bhuuyaatsakala sujanebhyaH pratidinam.h  ||32||</p>
+        <p id="E33">idamekaatmataa stotra.n shraddhayaa yaH sadaa paThet.h<br />
+        sa raashhTradharma nishhThaavaanakha.nDaM bhaarata.n smaret.h  ||33||</p>
         </span>
         <span id ="sanskrith" align= "center">
           <h4><b><u>एकात्मता स्तोत्रम्</u></b></h4>
-          <p>ॐ नमः सच्चिदानंदरूपाय परमात्मने<br />
+          <p id="S1">ॐ नमः सच्चिदानंदरूपाय परमात्मने<br />
           ज्योतिर्मयस्वरूपाय विश्वमांगल्यमूर्तये॥१॥</p>
-          <p>प्रकृतिः पंचभूतानि ग्रहलोकस्वरास्तथा<br />
+          <p id="S2">प्रकृतिः पंचभूतानि ग्रहलोकस्वरास्तथा<br />
           दिशः कालश्च सर्वेषां सदा कुर्वंतु मंगलम्‌॥२॥</p>
-          <p>रत्नाकराधौतपदां हिमालयकिरीटिनीम्‌<br />
+          <p id="S3">रत्नाकराधौतपदां हिमालयकिरीटिनीम्‌<br />
           ब्रह्मराजर्षिरत्नाढ्याम् वन्दे भारतमातरम्‌  ॥३॥</p>
-          <p>महेंद्रो मलयः सह्यो देवतात्मा हिमालयः<br />
+          <p id="S4">महेंद्रो मलयः सह्यो देवतात्मा हिमालयः<br />
           ध्येयो रैवतको विन्ध्यो गिरिश्चारावलिस्तथा  ॥४॥</p>
-          <p>गंगा सरस्वती सिंधु ब्रह्मपुत्राश्च गंदकी<br />
+          <p id="S5">गंगा सरस्वती सिंधु ब्रह्मपुत्राश्च गंदकी<br />
           कावेरी यमुना रेवा कृष्णा गोदा महानदी  ॥५॥</p>
-          <p>अयोध्या मथुरा माया काशी कांची अवंतिका<br />
+          <p id="S6">अयोध्या मथुरा माया काशी कांची अवंतिका<br />
           वैशाली द्वारका ध्येया पुरी तक्शशिला गया  ॥६॥</p>
-          <p>प्रयागः पाटलीपुत्रं विजयानगरं महत्‌<br />
+          <p id="S7">प्रयागः पाटलीपुत्रं विजयानगरं महत्‌<br />
           इंद्रप्रस्थं सोमनाथस्तथामृतसरः प्रियम्‌॥७॥</p>
-          <p>चतुर्वेदाः पुराणानि सर्वोपनिषदस्तथा<br />
+          <p id="S8">चतुर्वेदाः पुराणानि सर्वोपनिषदस्तथा<br />
           रामायणं भारतं च गीता षड्दर्शनानि च  ॥८॥</p>
-          <p>जैनागमास्त्रिपिटकः गुरुग्रन्थः सतां गिरः<br />
+          <p id="S9">जैनागमास्त्रिपिटकः गुरुग्रन्थः सतां गिरः<br />
           एष ज्ञाननिधिः श्रेष्ठः श्रद्धेयो हृदि सर्वदा॥९॥</p>
-          <p>अरुन्धत्यनसूय च सावित्री जानकी सती<br />
+          <p id="S10">अरुन्धत्यनसूय च सावित्री जानकी सती<br />
           द्रौपदी कन्नगे गार्गी मीरा दुर्गावती तथा  ॥१०॥</p>
-          <p>लक्ष्मी अहल्या चन्नम्मा रुद्रमाम्बा सुविक्रमा<br />
+          <p id="S11">लक्ष्मी अहल्या चन्नम्मा रुद्रमाम्बा सुविक्रमा<br />
           निवेदिता सारदा च प्रणम्य मातृ देवताः  ॥११॥</p>
-          <p>श्री रामो भरतः कृष्णो भीष्मो धर्मस्तथार्जुनः<br />
+          <p id="S12">श्री रामो भरतः कृष्णो भीष्मो धर्मस्तथार्जुनः<br />
           मार्कंडेयो हरिश्चन्द्र प्रह्लादो नारदो ध्रुवः  ॥१२॥</p>
-          <p>हनुमान्‌ जनको व्यासो वसिष्ठश्च शुको बलिः<br />
+          <p id="S13">हनुमान्‌ जनको व्यासो वसिष्ठश्च शुको बलिः<br />
           दधीचि विश्वकर्माणौ पृथु वाल्मीकि भार्गवः   ॥१३॥</p>
-          <p>भगीरथश्चैकलव्यो मनुर्धन्वन्तरिस्तथा<br />
+          <p id="S14">भगीरथश्चैकलव्यो मनुर्धन्वन्तरिस्तथा<br />
           शिबिश्च रन्तिदेवश्च पुराणोद्गीतकीर्तयः   ॥१४॥</p>
-          <p>बुद्ध जिनेन्द्र गोरक्शः पाणिनिश्च पतंजलिः<br />
+          <p id="S15">बुद्ध जिनेन्द्र गोरक्शः पाणिनिश्च पतंजलिः<br />
           शंकरो मध्व निंबार्कौ श्री रामानुज वल्लभौ  ॥१५॥</p>
-          <p>झूलेलालोथ चैतन्यः तिरुवल्लुवरस्तथा<br />
+          <p id="S16">झूलेलालोथ चैतन्यः तिरुवल्लुवरस्तथा<br />
           नायन्मारालवाराश्च कंबश्च बसवेश्वरः  ॥१६॥</p>
-          <p>देवलो रविदासश्च कबीरो गुरु नानकः<br />
+          <p id="S17">देवलो रविदासश्च कबीरो गुरु नानकः<br />
           नरसी तुलसीदासो दशमेषो दृढव्रतः   ॥१७॥</p>
-          <p>श्रीमच्छङ्करदेवश्च बंधू सायन माधवौ<br />
+          <p id="S18">श्रीमच्छङ्करदेवश्च बंधू सायन माधवौ<br />
           ज्ञानेश्वरस्तुकाराम रामदासः पुरन्दरः   ॥१८॥</p>
-          <p>बिरसा सहजानन्दो रमानन्दस्तथा महान्‌<br />
+          <p id="S19">बिरसा सहजानन्दो रमानन्दस्तथा महान्‌<br />
           वितरन्तु सदैवैते दैवीं षड्गुणसंपदम्‌   ॥१९॥</p>
-          <p>रविवर्मा भातखंडे भाग्यचन्द्रः स भोपतिः<br />
-          कलावंतश्च विख्याताः स्मरणीया निरंतरम्‌   ॥२०॥</p>
-          <p>भरतर्षिः कालिदासः श्रीभोजो जनकस्तथा<br />
-          सूरदासस्त्यागराजो रसखानश्च सत्कविः  ॥२१॥</p>
-          <p>अगस्त्यः कंबु कौन्डिण्यौ राजेन्द्रश्चोल वंशजः<br />
+          <p id="S20">भरतर्षिः कालिदासः श्रीभोजो जनकस्तथा<br />
+          सूरदासस्त्यागराजो रसखानश्च सत्कविः  ॥२०॥</p>
+          <p id="S21">रविवर्मा भातखंडे भाग्यचन्द्रः स भोपतिः<br />
+          कलावंतश्च विख्याताः स्मरणीया निरंतरम्‌   ॥२१॥</p>
+          <p id="S22">अगस्त्यः कंबु कौन्डिण्यौ राजेन्द्रश्चोल वंशजः<br />
           अशोकः पुश्य मित्रश्च खारवेलः सुनीतिमान्‌   ॥२२॥</p>
-          <p>चाणक्य चन्द्रगुप्तौ च विक्रमः शालिवाहनः<br />
+          <p id="S23">चाणक्य चन्द्रगुप्तौ च विक्रमः शालिवाहनः<br />
           समुद्रगुप्तः श्रीहर्षः शैलेंद्रो बप्परावलः   ॥२३॥</p>
-          <p>लाचिद्भास्कर वर्मा च यशोधर्मा च हूणजित्‌<br />
+          <p id="S24">लाचिद्भास्कर वर्मा च यशोधर्मा च हूणजित्‌<br />
           श्रीकृष्णदेवरायश्च ललितादित्य उद्बलः   ॥२४॥</p>
-          <p>मुसुनूरिनायकौ तौ प्रतापः शिव भूपतिः<br />
+          <p id="S25">मुसुनूरिनायकौ तौ प्रतापः शिव भूपतिः<br />
           रणजितसिंह इत्येते वीरा विख्यात विक्रमाः  ॥२५॥</p>
-          <p>वैज्ञानिकाश्च कपिलः कणादः शुश्रुतस्तथा<br />
+          <p id="S26">वैज्ञानिकाश्च कपिलः कणादः शुश्रुतस्तथा<br />
           चरको भास्कराचार्यो वराहमिहिर सुधीः   ॥२६॥</p>
-          <p>नागार्जुन भरद्वाज आर्यभट्टो वसुर्बुधः<br />
+          <p id="S27">नागार्जुन भरद्वाज आर्यभट्टो वसुर्बुधः<br />
           ध्येयो वेंकट रामश्च विज्ञा रामानुजायः   ॥२७॥</p>
-          <p>रामकृष्णो दयानंदो रवींद्रो राममोहनः<br />
+          <p id="S28">रामकृष्णो दयानंदो रवींद्रो राममोहनः<br />
           रामतीर्थोऽरविंदश्च विवेकानंद उद्यशः   ॥२८॥</p>
-          <p>दादाभाई गोपबंधुः टिळको गांधी रादृताः<br />
+          <p id="S29">दादाभाई गोपबंधुः टिळको गांधी रादृताः<br />
           रमणो मालवीयश्च श्री सुब्रमण्य भारती   ॥२९॥</p>
-          <p>सुभाषः प्रणवानंदः क्रांतिवीरो विनायकः<br />
+          <p id="S30">सुभाषः प्रणवानंदः क्रांतिवीरो विनायकः<br />
           ठक्करो भीमरावश्च फुले नारायणो गुरुः   ॥३०॥</p>
-          <p>संघशक्ति प्रणेतारौ केशवो माधवस्तथा<br />
+          <p id="S31">संघशक्ति प्रणेतारौ केशवो माधवस्तथा<br />
           स्मरणीय सदैवैते नवचैतन्यदायकाः   ॥३१॥</p>
-          <p>अनुक्ता ये भक्ताः प्रभुचरण संसक्तहृदयाः<br />
+          <p id="S32">अनुक्ता ये भक्ताः प्रभुचरण संसक्तहृदयाः<br />
           अविज्ञाता वीरा अधिसमरमुद्ध्वस्तरि पवः<br />
           समाजोद्धर्तारः सुहितकर विज्ञान निपुणाः<br />
           नमस्तेभ्यो भूयात्सकल सुजनेभ्यः प्रतिदिनम्‌  ॥ ३२॥</p>
-          <p>इदमेकात्मता स्तोत्रं श्रद्धया यः सदा पठेत्‌<br />
+          <p id="S33">इदमेकात्मता स्तोत्रं श्रद्धया यः सदा पठेत्‌<br />
           स राष्ट्रधर्म निष्ठावानखंडं भारतं स्मरेत्‌  ॥३३॥</p>
         </span>
       </div>
       <div id ="meaning" align= "left">
         <h4><b><u> Meaning </u></b></h4>
-        <p>Om. I bow to the supreme Lord who is the very embodiment of truth, Knowledge and Happiness,the one who is enlightened, and who is the very incarnate of universal good. || 1 ||</p>
-        <p>May all these cause perpetual good to us: Nature composed of three qualities i.e., Satva, Rajas and Tamas Gunas; the five elements namely fire, water, air, earth and space; The seven notes of Music; The ten quarters and time - past, present and future. || 2 ||</p>
-        <p>Bhaarat Maataa (the mother land), I bow to thee, whose feet are being washed by the ocean waves, whose crown is the snowy himalayas, whose illustrious sons have distinguished themselves as Brahmarshis and as Rajarshis. || 3 ||</p>
-        <p>These mountains of our country should always be remembered - Mahendra (In Orissa), Malaya Giri (in Mysore), Sahyadri (Western Coast), Himalaya, the abode of gods, Raivataka (Girnar in Gujarat), Vindhyachal (Central India) and Aravali (in Rajasthan). || 4 ||</p>
-        <p>Seven important rivers of our motherland: Ganga, Sarasvati (invisible), Sindhu, Brahmaputra, Gandaki, Kaveri, Yamuna, Reva (Narmada), Krishna, Godavari and Mahanadi. || 5 ||</p>
-        <p>Important holy places - Ayodhya, Mathura, Maya (Haridwar), Kashi, Kanchi, Avanthika (Ujjain), Vaishali, Dwaarika, Puri, Takshashila, Gaya. || 6 ||<br /><br />Prayaga, Pataliputra (Patna), Vijayanagara, IndraPrastha (Delhi), Somanath, the famous and Amritsar.|| 7 ||<br /><br />We must revere these great religious books from the core of our heart - the four vedas, eighteen puranas, all the Upanishads, the Ramayana, The Mahabharata, the Gita, the true Philosophies (Six Darshanas), || 8 ||<br /><br />... The Agama books of Jainism, the Tripitaka of Buddhism and the truthful verse (Vani) of Guru Granth Sahib.|| 9 ||<br /><br />These great ladies must be worshipped as mother goddesses -Arundhati (Wife of Sage Vasista), Anasuya (wife of sage Atri), Savitri, Janaki, Sati (daughter of Daksha and consort of Lord Shiva), Draupadi, Kannagi (a chaste women of Tamil Nadu), Gargi (a learned woman of vedic period), Mira (a famous devotee of Lord Krishna), Durgavati (the brave<br />Queen of Gadha mandala in Central India who fought against the Moghuls), ... || 10 ||<br /><br />Lakshmibai (the famous Queen of Jhansi), Ahalya Bai Holkar, Channamma (the brave lady of Karnataka), Rudramaambaa, Sister Nivedita (the disciple of Vivekananda) and Ma Sharada (the Dharma companion of Sri RamKrishna)&nbsp;||11||<br /><br />These are the great men of our country whose glory has been sung in the Puranic lore - Lord Rama, King Bharata, Lord Krishna, Bhishma Pitamah (the great celibate), Dharmaraja Yudhishthir, Arjuna (the great Archer), Sage Markandeya, Truthful king Harishchandra, Prahlada, Narada, Dhruva, ...|| 12 ||</p>
-        <p>Hanuman, King Janaka, Vyasa (the great editor of the Vedic Literature) age, Vashishtha, Shukadeva Muni, King Bali, Dadhichi (the great donor of his bones), Vishwakarma (the great architect), King Prithu (after whom our earth become known as Prithvi), Sage Valmiki (the author of Ramayana), Parashurama (the son of Bhrigu). ||13||<br /><br />King Bhagiratha, Eklavaya (a devoted disciple of Guru Dronacharya), Manu (the great Hindu law giver), Dhanvantari (the great Indian Physician), and King Rantideva (who himself starved to feed the hungry).&nbsp;&nbsp;|| 14 ||</p>
-        <p>May these noble souls distinguished in their chosen field of activity generously bless us with their divine virtues: Lord Buddha, Lord Mahavira, the great Yogi Gorakhnath, Panini (the great grammarian), Patanjali (the author of Mahabhashya), Adi Shankaracharya (the great Hindu crusader), philosophers and saints like Madhvacharya, Nimbarkacharya, ...|| 15 ||<br /><br />... Jhulelal (the great saviour of Sindhi Hindus), Mahaprabhu Chaitanya, Tiruvalluvar, Nayanmars, Alwars, Kamban (the Ramayana bard of Tamil), Basaveshwar,&nbsp;&nbsp;|| 16 ||<br /><br />Maharishi Devala, Sant Ravidas, Kabir, Guru Nanak, Bhakta Narshi Mehta, Tulsidas, Guru Gobind Singh,&nbsp;|| 17 ||<br /><br />Shankardeva (the vaishnava saint of Assam), the brothers Sayanacharya and Madhavacharya, Sant Gyaneshwar, Tukaram, Samartha Guru Ramdas, Purandaradasa, ...&nbsp;|| 18 ||<br /><br />Birsa Munda of Bihar, Swami Sahajananda and Swami Ramananda (the great saviour of Hinudism in the medieval period),&nbsp;|| 19 ||<br /><br />Poet Kalidasa, Sri Bhojaraja, Jakana, Hindi poet Bhakt Surdas, Bhakta Thyagaraja, and poet Rasakhan, || 20 ||</p>
-        <p>Ravi Varma (the famous painter), Bhata Khanda (the great Musician), and Bhagya Chandra (a King of Manipur).&nbsp;&nbsp;|| 21 ||<br /><br />These are the great warriors and conquerors of our country in the past: Agastya, Kambu, Kaundinya, King Rajendra of Chola Dynasty, Ashoka the Great, Pushyamitra ( the founder of Shung Dynasty), Kharavela (king of Kalinga),&nbsp;&nbsp;|| 22 ||</p>
-        <p>Chanakya and Chandragupta the Precept of disciple pair), Vikramaditya, Shalivahana of mighty prowess, Samudragupta, Harshvardhana, King Shailendra, Bappa Raval,&nbsp;&nbsp;|| 23 ||</p>
-        <p>Lachit Barfukan, Bhaskarverma, Yashodharma (the vanquisher of the Hun hordes), Sri Krishnadevaraya (the great king of Vijayanagar Empire), Lalitaditya (a great warrior),&nbsp;&nbsp;|| 24 ||<br /><br />Musunoori Nayakas (Prolaya Nayak, Kappa Nayak), Maharana Pratap, Chhattarpati Shivaji, and Maharaja Ranjit Singh.&nbsp;&nbsp;|| 25 ||</p>
-        <p>These are the great Indian Scientists whom we must not forget : Kanaada Rishi, Sushruta ( the great Indian Surgeon), Charaka, Bhaskaracharya, Varahamihira, ...&nbsp;|| 26 ||<br /><br />Nagarjuna, Bharadwaja, Arya Bhata, Jagdish Chandra Basu, C.V. Raman and Ramanujan.&nbsp; || 27 ||<br /><br />And these are the some social religious leaders who brought about a great revival of the age old Hindu Society and infused new blood into its viens: Sri Rama Krishna Pramhansa, Swami Dayananda, Rabindra Nath Tagore, Raja Ram Mohan Rai, Swami RamTirtha, Maharishi Aurobindo, Swami Vivekananda,&nbsp;|| 28 ||<br /><br />DadaBhai Nauroji, Gopa Bhandhu Das, Bal Gangadhara Tilak, Mahatma Gandhi, Maharishi Ramana, Mahamana Madan Mohan Malviya, Tamil poet Subrahmaniya Bharati,&nbsp; || 29 ||<br /><br />Netaji Subhash Chandra Bose, Swami Pranavaananda, the great revolutionary Vinayak Damodar Savarkar, Thakkar Bappa, BhimRao Ambedkar, Mahatma Jyoti rao Phule, Narayana Guru&nbsp; || 30 ||<br /><br />and the founder of RSS Dr. Hedgewar and his successor Sri Guruji Golwalkar.&nbsp; || 31 ||<br /><br />There are many more devotees of Bharat Mata, whose name could not be recalled in the limited space here. Their hearts are in constant communion with God. Again there are numerous warriors who made the enemies of Bharat Mata Bite the dust but today ubfortunately we do not know their names. Still there might have been left out some important names of great social reformers and adept scientists through oversight. May our deep reverence and regards reach out to them daily. || 32 ||<br /><br />This is the Unity Hymn. He who recites it daily with reverence and devotion will be firmly established in the Dharma of Nationalism. And in him the memory of Akhand Bharat would never fade.&nbsp; || 33 ||</p>
-        <p>Victory to the Universal Truth</p>
+        <p id="M1">Om. I bow to the supreme Lord who is the very embodiment of truth, Knowledge and Happiness,the one who is enlightened, and who is the very incarnate of universal good. || 1 ||</p>
+        <p id="M2">May all these cause perpetual good to us: Nature composed of three qualities i.e., Satva, Rajas and Tamas Gunas; the five elements namely fire, water, air, earth and space; The seven notes of Music; The ten quarters and time - past, present and future. || 2 ||</p>
+        <p id="M3">Bhaarat Maataa (the mother land), I bow to thee, whose feet are being washed by the ocean waves, whose crown is the snowy himalayas, whose illustrious sons have distinguished themselves as Brahmarshis and as Rajarshis. || 3 ||</p>
+        <p id="M4">These mountains of our country should always be remembered - Mahendra (In Orissa), Malaya Giri (in Mysore), Sahyadri (Western Coast), Himalaya, the abode of gods, Raivataka (Girnar in Gujarat), Vindhyachal (Central India) and Aravali (in Rajasthan). || 4 ||</p>
+        <p id="M5">Seven important rivers of our motherland: Ganga, Sarasvati (invisible), Sindhu, Brahmaputra, Gandaki, Kaveri, Yamuna, Reva (Narmada), Krishna, Godavari and Mahanadi. || 5 ||</p>
+        <p id="M6">Important holy places - Ayodhya, Mathura, Maya (Haridwar), Kashi, Kanchi, Avanthika (Ujjain), Vaishali, Dwaarika, Puri, Takshashila, Gaya. || 6 ||</p>
+        <p id="M7">Prayaga, Pataliputra (Patna), Vijayanagara, IndraPrastha (Delhi), Somanath, the famous and Amritsar.|| 7 ||</p>
+        <p id="M8">We must revere these great religious books from the core of our heart - the four vedas, eighteen puranas, all the Upanishads, the Ramayana, The Mahabharata, the Gita, the true Philosophies (Six Darshanas), || 8 ||</p>
+        <p id="M9">... The Agama books of Jainism, the Tripitaka of Buddhism and the truthful verse (Vani) of Guru Granth Sahib.|| 9 ||</p>
+        <p id="M10">These great ladies must be worshipped as mother goddesses -Arundhati (Wife of Sage Vasista), Anasuya (wife of sage Atri), Savitri, Janaki, Sati (daughter of Daksha and consort of Lord Shiva), Draupadi, Kannagi (a chaste women of Tamil Nadu), Gargi (a learned woman of vedic period), Mira (a famous devotee of Lord Krishna), Durgavati (the brave<br />Queen of Gadha mandala in Central India who fought against the Moghuls), ... || 10 ||</p>
+        <p id="M11">Lakshmibai (the famous Queen of Jhansi), Ahalya Bai Holkar, Channamma (the brave lady of Karnataka), Rudramaambaa, Sister Nivedita (the disciple of Vivekananda) and Ma Sharada (the Dharma companion of Sri RamKrishna)||11||</p>
+        <p id="M12">These are the great men of our country whose glory has been sung in the Puranic lore - Lord Rama, King Bharata, Lord Krishna, Bhishma Pitamah (the great celibate), Dharmaraja Yudhishthir, Arjuna (the great Archer), Sage Markandeya, Truthful king Harishchandra, Prahlada, Narada, Dhruva, ...|| 12 ||</p>
+        <p id="M13">Hanuman, King Janaka, Vyasa (the great editor of the Vedic Literature) age, Vashishtha, Shukadeva Muni, King Bali, Dadhichi (the great donor of his bones), Vishwakarma (the great architect), King Prithu (after whom our earth become known as Prithvi), Sage Valmiki (the author of Ramayana), Parashurama (the son of Bhrigu). ||13||</p>
+        <p id="M14">King Bhagiratha, Eklavaya (a devoted disciple of Guru Dronacharya), Manu (the great Hindu law giver), Dhanvantari (the great Indian Physician), and King Rantideva (who himself starved to feed the hungry).|| 14 ||</p>
+        <p id="M15">May these noble souls distinguished in their chosen field of activity generously bless us with their divine virtues: Lord Buddha, Lord Mahavira, the great Yogi Gorakhnath, Panini (the great grammarian), Patanjali (the author of Mahabhashya), Adi Shankaracharya (the great Hindu crusader), philosophers and saints like Madhvacharya, Nimbarkacharya, ...|| 15 ||</p>
+        <p id="M17">... Jhulelal (the great saviour of Sindhi Hindus), Mahaprabhu Chaitanya, Tiruvalluvar, Nayanmars, Alwars, Kamban (the Ramayana bard of Tamil), Basaveshwar,|| 16 ||</p>
+        <p id="M16">Maharishi Devala, Sant Ravidas, Kabir, Guru Nanak, Bhakta Narshi Mehta, Tulsidas, Guru Gobind Singh,|| 17 ||</p>
+        <p id="M18">Shankardeva (the vaishnava saint of Assam), the brothers Sayanacharya and Madhavacharya, Sant Gyaneshwar, Tukaram, Samartha Guru Ramdas, Purandaradasa, ...|| 18 ||</p>
+        <p id="M19">Birsa Munda of Bihar, Swami Sahajananda and Swami Ramananda (the great saviour of Hinudism in the medieval period),|| 19 ||</p>
+        <p id="M20">Poet Kalidasa, Sri Bhojaraja, Jakana, Hindi poet Bhakt Surdas, Bhakta Thyagaraja, and poet Rasakhan, || 20 ||</p>
+        <p id="M21">Ravi Varma (the famous painter), Bhata Khanda (the great Musician), and Bhagya Chandra (a King of Manipur).|| 21 ||</p>
+        <p id="M22">These are the great warriors and conquerors of our country in the past: Agastya, Kambu, Kaundinya, King Rajendra of Chola Dynasty, Ashoka the Great, Pushyamitra ( the founder of Shung Dynasty), Kharavela (king of Kalinga),|| 22 ||</p>
+        <p id="M23">Chanakya and Chandragupta the Precept of disciple pair), Vikramaditya, Shalivahana of mighty prowess, Samudragupta, Harshvardhana, King Shailendra, Bappa Raval,|| 23 ||</p>
+        <p id="M24">Lachit Barfukan, Bhaskarverma, Yashodharma (the vanquisher of the Hun hordes), Sri Krishnadevaraya (the great king of Vijayanagar Empire), Lalitaditya (a great warrior),|| 24 ||</p>
+        <p id="M25">Musunoori Nayakas (Prolaya Nayak, Kappa Nayak), Maharana Pratap, Chhattarpati Shivaji, and Maharaja Ranjit Singh.|| 25 ||</p>
+        <p id="M26">These are the great Indian Scientists whom we must not forget : Kanaada Rishi, Sushruta ( the great Indian Surgeon), Charaka, Bhaskaracharya, Varahamihira, ...|| 26 ||</p>
+        <p id="M27">Nagarjuna, Bharadwaja, Arya Bhata, Jagdish Chandra Basu, C.V. Raman and Ramanujan. || 27 ||</p>
+        <p id="M28">And these are the some social religious leaders who brought about a great revival of the age old Hindu Society and infused new blood into its viens: Sri Rama Krishna Pramhansa, Swami Dayananda, Rabindra Nath Tagore, Raja Ram Mohan Rai, Swami RamTirtha, Maharishi Aurobindo, Swami Vivekananda,|| 28 ||</p>
+        <p id="M29">DadaBhai Nauroji, Gopa Bhandhu Das, Bal Gangadhara Tilak, Mahatma Gandhi, Maharishi Ramana, Mahamana Madan Mohan Malviya, Tamil poet Subrahmaniya Bharati, || 29 ||</p>
+        <p id="M30">Netaji Subhash Chandra Bose, Swami Pranavaananda, the great revolutionary Vinayak Damodar Savarkar, Thakkar Bappa, BhimRao Ambedkar, Mahatma Jyoti rao Phule, Narayana Guru || 30 ||</p>
+        <p id="M31">and the founder of RSS Dr. Hedgewar and his successor Sri Guruji Golwalkar. || 31 ||</p>
+        <p id="M32">There are many more devotees of Bharat Mata, whose name could not be recalled in the limited space here. Their hearts are in constant communion with God. Again there are numerous warriors who made the enemies of Bharat Mata Bite the dust but today ubfortunately we do not know their names. Still there might have been left out some important names of great social reformers and adept scientists through oversight. May our deep reverence and regards reach out to them daily. || 32 ||</p>
+        <p id="M33">This is the Unity Hymn. He who recites it daily with reverence and devotion will be firmly established in the Dharma of Nationalism. And in him the memory of Akhand Bharat would never fade. || 33 ||</p>
       </div>
     </div>
+    <h4 align = "center">Victory to the Universal Truth</h4>
     <script src="script.js"></script>
 
   </body>
