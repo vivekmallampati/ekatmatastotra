@@ -18,6 +18,7 @@ function makeSanskritVisible() {
   var english = document.getElementById("english");
   sanskrith.style.width = "100%";
   english.style.width = "0%";
+  
   sanskrith.style.visibility = 'visible';
   english.style.visibility = 'hidden';
   var div = document.getElementById('sanskrith_text');
@@ -69,8 +70,10 @@ function search(){
   if(query == 'a'){
     return;
   }
+  let params = `resizable=yes,menubar=no,left=-1000,top=-1000`;
+
   url = 'http://www.google.com/search?q=' + query;
-  window.open(url,'_blank');
+  window.open(url,'search',params,);
 }
 // for (var i = 0; i < 1000; i++) {
 //   getHighlighted()
