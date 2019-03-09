@@ -111,6 +111,7 @@ function blackPrevSelection(){
     preenglishSelection.style.color = 'Black';  //CORNSILK
   }
 }
+
 function shadeverse(verseNum){
 
   if(verseNum != prevVerse){
@@ -202,19 +203,9 @@ function search(){
   url = 'http://www.google.com/search?q=' + query;
   window.open(url,'search',params,);
 }
-// for (var i = 0; i < 1000; i++) {
-//   getHighlighted()
-// }
+
 window.onmouseup = function(){
   if (isOn === true) {
     search();
   }
 }
-// let count = 0;
-// window.setInterval(function(){
-//   if (count >  10) {
-//     clearInterval();
-//   }
-//   count = count + 1;
-//
-// },5000);
