@@ -1,6 +1,8 @@
 let isOn = false;
 highlightOff();
 makeSanskritNotVisible()
+var pic = document.getElementById("image");
+pic.style.display = "none";
 
 var myAudio = document.getElementById("audioFile");
 
@@ -118,6 +120,7 @@ function shadeverse(verseNum){
     var Everse = 'E'+verseNum;
     var Sverse = 'S'+verseNum;
     var Mverse = 'M'+verseNum;
+    var ImgSrc = "images/image"+verseNum+".jpg"
     blackPrevSelection();
     var sanskrithSelection = document.getElementById(Sverse);
     var englishSelection = document.getElementById(Everse);
@@ -126,6 +129,8 @@ function shadeverse(verseNum){
     sanskrithSelection.style.color = 'DarkGoldenRod';  //CORNSILK
     englishSelection.style.color = 'DarkGoldenRod';  //CORNSILK
     prevVerse = verseNum;
+    document.getElementById("myImage").src = ImgSrc;
+
   }
 }
 
@@ -169,11 +174,25 @@ function makeSanskritNotVisible() {
   div.style.backgroundColor = 'green';
 }
 
+function picturemode(){
+  var div = document.getElementById('off');
+  div.style.backgroundColor = 'red';
+  var div = document.getElementById('on');
+  div.style.backgroundColor = 'red';
+  var pic = document.getElementById("picture");
+  pic.style.backgroundColor = 'green';
+
+  var pic = document.getElementById("image");
+  pic.style.display = "block";
+}
+
 function highlightOn(){
   var div = document.getElementById('on');
   div.style.backgroundColor = 'green';
   var div = document.getElementById('off');
   div.style.backgroundColor = 'red';
+  var pic = document.getElementById("picture");
+  pic.style.backgroundColor = 'red';
 }
 
 function highlightOff(){
@@ -181,16 +200,24 @@ function highlightOff(){
   div.style.backgroundColor = 'green';
   var div = document.getElementById('on');
   div.style.backgroundColor = 'red';
+  var pic = document.getElementById("picture");
+  pic.style.backgroundColor = 'red';
 }
 
 function enableisOn(){
   isOn = true;
   highlightOn();
+  var pic = document.getElementById("image");
+  pic.style.display = "none";
+
 }
 
 function disableisOn(){
   isOn = false;
   highlightOff();
+  var pic = document.getElementById("image");
+  pic.style.display = "none";
+
 }
 
 function search(){
