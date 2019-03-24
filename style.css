@@ -55,5 +55,9 @@
 }
 #image{
   margin-left: 10px;
-  width: 50%;
+  width: 40%;
+}
+#myImage{
+  height: 600px;
+  width: 400px;
 }
