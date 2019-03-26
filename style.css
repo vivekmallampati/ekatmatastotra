@@ -1,10 +1,10 @@
 /*Style.css*/
-body {
+/* body {
   background-color: lightblue;
 }
 div {
   background-color: SandyBrown;
-}
+} */
 #link{
   width: 100%;
   display: flex;
@@ -50,13 +50,13 @@ div {
 #sanskrith{
   width: 100%;
   margin-right: 10px;
-  background-color:  #ffb833;
+  /* background-color:  #ffb833; */
 
 }
 #english{
   width: 100%;
   margin-right: 10px;
-  background-color:  #ffb833;
+  /* background-color:  #ffb833; */
 
 }
 #meaning{
@@ -70,6 +70,6 @@ div {
   height: 600px;
   width: 400px;
 }
-p {
+/* p {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
+} */
