@@ -121,7 +121,7 @@ function shadeverse(verseNum){
     var Everse = 'E'+verseNum;
     var Sverse = 'S'+verseNum;
     var Mverse = 'M'+verseNum;
-    var ImgSrc = "images/image"+verseNum+".jpg"
+    var ImgSrc = "images/image"+verseNum+".JPG"
     blackPrevSelection();
     var sanskrithSelection = document.getElementById(Sverse);
     var englishSelection = document.getElementById(Everse);
