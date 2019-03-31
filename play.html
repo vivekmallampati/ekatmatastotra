@@ -18,8 +18,8 @@
     <div id="link">
       <div id ="lyrics" align= "center">
         <h4> What language text? </h4>
-        <div id ="sanskrith_text"> <h3 onclick="makeSanskritVisible()">Sanskrith</h3></div>
-        <div id ="english_text"> <h3 onclick="makeSanskritNotVisible()">English</h3></div>
+        <div id ="sanskrith_text" onclick="makeSanskritVisible()"> <h3>Sanskrith</h3></div>
+        <div id ="english_text" onclick="makeSanskritNotVisible()"> <h3>English</h3></div>
 
       </div>
 
@@ -28,9 +28,10 @@
           <!-- <a href="interactive.html">Interactive</a> -->
           Interactive:
         </h2>
-        <div id ="off"> <h3 onclick="disableisOn()">Off</h3></div>
-        <div id ="on"> <h3 onclick="enableisOn()">Search Mode</h3></div>
-        <div id ="picture"> <h3 onclick="picturemode()">Picture Mode</h3></div>
+        <div id ="off" onclick="disableisOn()"> <h3>Off</h3></div>
+        <div id ="on" onclick="enableisOn()"> <h3>Search Mode</h3></div>
+        <div id ="picture" onclick="picturemode()"> <h3>Picture Mode</h3></div>
+        <div id ="isolation_mode" onclick="isolation()"> <h3>Isolation Mode</h3></div>
 
       </div>
     </div>
@@ -220,6 +221,12 @@
       <div id ="image" align= "right">
         <img src="images/image0.JPG" alt="Format of the image is not compatable with ur browser" id="myImage">
       </div>
+    </div>
+    <div id = "isolation">
+      <div id ="iso_image" align= "center">
+        <img src="images/image0.JPG" alt="Format of the image is not compatable with ur browser" id="myImage">
+      </div>
+
     </div>
     <p> Dharma</p>
     <script src="script.js"></script>

@@ -150,8 +150,8 @@ function getHighlighted(){
 function makeSanskritVisible() {
   var sanskrith = document.getElementById("sanskrith");
   var english = document.getElementById("english");
-  sanskrith.style.width = "100%";
-  english.style.width = "0%";
+  sanskrith.style.display = "block";
+  english.style.display = "none";
 
   sanskrith.style.visibility = 'visible';
   english.style.visibility = 'hidden';
@@ -164,8 +164,8 @@ function makeSanskritVisible() {
 function makeSanskritNotVisible() {
   var sanskrith = document.getElementById("sanskrith");
   var english = document.getElementById("english");
-  sanskrith.style.width = "0%";
-  english.style.width = "100%";
+  sanskrith.style.display = "none";
+  english.style.display = "block";
 
   sanskrith.style.visibility = 'hidden';
   english.style.visibility = 'visible';
@@ -182,26 +182,53 @@ function picturemode(){
   div.style.backgroundColor = 'red';
   var pic = document.getElementById("picture");
   pic.style.backgroundColor = 'green';
-
+  var pic = document.getElementById("isolation_mode");
+  pic.style.backgroundColor = 'red';
+  var pic = document.getElementById("isolation");
+  pic.style.display = "none";
   var pic = document.getElementById("image");
   pic.style.display = "block";
 }
 
+
+function isolation(){
+  var pic = document.getElementById("lyric_space");
+  pic.style.display = "none";
+  var pic = document.getElementById("isolation");
+  pic.style.display = "block";
+  var div = document.getElementById('on');
+  div.style.backgroundColor = 'red';
+  var div = document.getElementById('off');
+  div.style.backgroundColor = 'red';
+  var pic = document.getElementById("picture");
+  pic.style.backgroundColor = 'red';
+  var pic = document.getElementById("isolation_mode");
+  pic.style.backgroundColor = 'green';
+}
+
 function highlightOn(){
+  var pic = document.getElementById("isolation");
+  pic.style.display = "none";
   var div = document.getElementById('on');
   div.style.backgroundColor = 'green';
   var div = document.getElementById('off');
   div.style.backgroundColor = 'red';
   var pic = document.getElementById("picture");
   pic.style.backgroundColor = 'red';
+  var pic = document.getElementById("isolation_mode");
+  pic.style.backgroundColor = 'red';
 }
 
 function highlightOff(){
+  var pic = document.getElementById("isolation");
+  pic.style.display = "none";
   var div = document.getElementById('off');
   div.style.backgroundColor = 'green';
   var div = document.getElementById('on');
   div.style.backgroundColor = 'red';
   var pic = document.getElementById("picture");
+  pic.style.backgroundColor = 'red';
+  var pic = document.getElementById("isolation_mode");
   pic.style.backgroundColor = 'red';
 }
 
@@ -209,6 +236,8 @@ function enableisOn(){
   isOn = true;
   highlightOn();
   var pic = document.getElementById("image");
+  pic.style.display = "none";
+  var pic = document.getElementById("isolation");
   pic.style.display = "none";
 
 }
@@ -218,7 +247,6 @@ function disableisOn(){
   highlightOff();
   var pic = document.getElementById("image");
   pic.style.display = "none";
-
 }
 
 function search(){
