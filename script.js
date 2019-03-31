@@ -7,6 +7,7 @@ pic.style.display = "none";
 var myAudio = document.getElementById("audioFile");
 
 var prevVerse = 0;
+var global_verseNum = 0;
 myAudio.onplay = function() {
   runAudioProcessing()
 };
@@ -31,6 +32,7 @@ function changeSelectionSection(currentT){
     var i = parseInt((currentT/60), 10);
     var j = (currentT%60)/100;
     var time = j + i;
+
     if(time > 0 && time < .2){
         shadeverse(1);
     }else if(time < 0.32){
@@ -116,8 +118,8 @@ function blackPrevSelection(){
 }
 
 function shadeverse(verseNum){
-
   if(verseNum != prevVerse){
+    global_verseNum = verseNum;
     var Everse = 'E'+verseNum;
     var Sverse = 'S'+verseNum;
     var Mverse = 'M'+verseNum;
@@ -131,6 +133,11 @@ function shadeverse(verseNum){
     englishSelection.style.color = 'DarkGoldenRod';  //CORNSILK
     prevVerse = verseNum;
     document.getElementById("myImage").src = ImgSrc;
+    document.getElementById("myImage2").src = ImgSrc;
+
+    document.getElementById("iso_text_sanskrit").textContent = document.getElementById(Sverse).textContent;
+    document.getElementById("iso_text_english").textContent = document.getElementById(Everse).textContent;
+    document.getElementById("iso_text_meaning").textContent = document.getElementById(Mverse).textContent;
 
   }
 }
@@ -140,7 +147,7 @@ function getHighlighted(){
   let start = window.getSelection().baseOffset;
   let end = window.getSelection().extentOffset;
   if(end - start < 2){
-    return a;
+    return 'a';
   }
   let baseText = ourSelection.extentNode.data;
   let selection = baseText.substring(start,end);
@@ -184,8 +191,11 @@ function picturemode(){
   pic.style.backgroundColor = 'green';
   var pic = document.getElementById("isolation_mode");
   pic.style.backgroundColor = 'red';
+
   var pic = document.getElementById("isolation");
   pic.style.display = "none";
+  var pic = document.getElementById("lyric_space");
+  pic.style.display = "flex";
   var pic = document.getElementById("image");
   pic.style.display = "block";
 }
@@ -196,6 +206,7 @@ function isolation(){
   pic.style.display = "none";
   var pic = document.getElementById("isolation");
   pic.style.display = "block";
+
   var div = document.getElementById('on');
   div.style.backgroundColor = 'red';
   var div = document.getElementById('off');
@@ -209,6 +220,9 @@ function isolation(){
 function highlightOn(){
   var pic = document.getElementById("isolation");
   pic.style.display = "none";
+  var pic = document.getElementById("lyric_space");
+  pic.style.display = "flex";
+
   var div = document.getElementById('on');
   div.style.backgroundColor = 'green';
   var div = document.getElementById('off');
@@ -222,6 +236,9 @@ function highlightOn(){
 function highlightOff(){
   var pic = document.getElementById("isolation");
   pic.style.display = "none";
+  var pic = document.getElementById("lyric_space");
+  pic.style.display = "flex";
+
   var div = document.getElementById('off');
   div.style.backgroundColor = 'green';
   var div = document.getElementById('on');

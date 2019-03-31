@@ -9,6 +9,10 @@ div {
   width: 100%;
   display: flex;
 }
+#lyric_space{
+  width: 70%;
+  display: flex;
+}
 #lyrics{
   width: 40%;
   margin-right: 20px;
@@ -75,6 +79,10 @@ div {
   width: 400px;
 }
 
+#myImage2{
+  height: 400px;
+  width: 300px;
+}
 body {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
