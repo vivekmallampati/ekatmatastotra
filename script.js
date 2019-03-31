@@ -108,7 +108,7 @@ function blackPrevSelection(){
     var presanskrithSelection = document.getElementById(preSverse);
     var preenglishSelection = document.getElementById(preEverse);
     var premeaningSelection = document.getElementById(preMeaning);
-    premeaningSelection.scrollIntoView();
+    preenglishSelection.scrollIntoView();
     premeaningSelection.style.color = 'Black';
     presanskrithSelection.style.color = 'Black';  //CORNSILK
     preenglishSelection.style.color = 'Black';  //CORNSILK
